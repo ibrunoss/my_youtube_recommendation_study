@@ -15,7 +15,7 @@ services:
     volumes:
       - wp_uploads:/var/www/html/wp-content/uploads
       - wp_themes:/var/www/html/wp-content/themes
-      - ./src/:/var/www/html/wp-content/plugins/my-youtube-recommendation
+      - ./src/:/var/www/html/wp-content/plugins/my-youtube-recommendation-study
     
   db:
     container_name: db
