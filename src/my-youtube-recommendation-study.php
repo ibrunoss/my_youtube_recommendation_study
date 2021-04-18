@@ -18,38 +18,38 @@
  */
 
  // If this file is called directly, abort.
- if ( ! defined( 'WPINC' ) ) {
+ if (! defined('WPINC')) {
 	wp_die();
 }
 
 // Plugin Version
-if ( ! defined( 'MY_YOUTUBE_RECOMMENDATION_STUDY_VERSION' ) ) {
-    define( 'MY_YOUTUBE_RECOMMENDATION_STUDY_VERSION', '1.0.0' );
+if (! defined('MY_YOUTUBE_RECOMMENDATION_STUDY_VERSION')) {
+    define('MY_YOUTUBE_RECOMMENDATION_STUDY_VERSION', '1.0.0');
 }
 
 // Plugin Name
-if ( ! defined( 'MY_YOUTUBE_RECOMMENDATION_STUDY_NAME' ) ) {
-    define( 'MY_YOUTUBE_RECOMMENDATION_STUDY_NAME', 'My Youtube Recommendation Study' );
+if (! defined('MY_YOUTUBE_RECOMMENDATION_STUDY_NAME')) {
+    define('MY_YOUTUBE_RECOMMENDATION_STUDY_NAME', 'My Youtube Recommendation Study');
 }
 
 // Plugin Slug
-if ( ! defined( 'MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_SLUG' ) ) {
-	define( 'MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_SLUG', 'my-youtube-recommendation-study' );
+if (! defined('MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_SLUG')) {
+	define('MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_SLUG', 'my-youtube-recommendation-study');
 }
 
 // Plugin Basename
-if ( ! defined( 'MY_YOUTUBE_RECOMMENDATION_STUDY_BASENAME' ) ) {
-	define( 'MY_YOUTUBE_RECOMMENDATION_STUDY_BASENAME', plugin_basename( __FILE__ ) );
+if (! defined('MY_YOUTUBE_RECOMMENDATION_STUDY_BASENAME')) {
+	define('MY_YOUTUBE_RECOMMENDATION_STUDY_BASENAME', plugin_basename(__FILE__));
 }
 
 // Plugin Folder
-if ( ! defined( 'MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_DIR' ) ) {
-	define( 'MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+if (! defined('MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_DIR')) {
+	define('MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_DIR', plugin_dir_path(__FILE__));
 }
 
 // JSON File Name
-if ( ! defined( 'MY_YOUTUBE_RECOMMENDATION_STUDY_JSON_FILENAME' ) ) {
-	define( 'MY_YOUTUBE_RECOMMENDATION_STUDY_JSON_FILENAME', 'my-yt-rec-s.json' );
+if (! defined('MY_YOUTUBE_RECOMMENDATION_STUDY_JSON_FILENAME')) {
+	define('MY_YOUTUBE_RECOMMENDATION_STUDY_JSON_FILENAME', 'my-yt-rec-s.json');
 }
 
 // Dependencies
@@ -58,7 +58,7 @@ require_once MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_DIR . 'includes/class-my-you
 require_once MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_DIR . 'includes/class-my-youtube-recommendation-study-widget.php';
 require_once MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_DIR . 'includes/class-my-youtube-recommendation-study-shortcode.php';
 
-if( is_admin() ) {
+if(is_admin()) {
 	require_once MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_DIR . 'includes/class-my-youtube-recommendation-study-admin.php';
 }
 
