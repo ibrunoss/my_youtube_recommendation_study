@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>My Youtube Recommendation Study Front-end Sample</title>
+  <style>
+    body {
+      background: #131313;
+      margin: 0;
+    }
+    body h2 {
+      text-align: center;
+    }
+
+    .container {
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      min-height: 500px;
+      padding: 10px;
+      background: #fff;
+    }
+
+    h2 {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h2>Vídeo no Post</h2>
+  <div id="videos" class="container">Carregando...</div>
+
+  <h2>Widget</h2>
+  <div id="widget" class="container">Carregando...</div>
+
+  <h2>ShortCode</h2>
+  <div id="shortcode" class="container">Carregando...</div>
+  <script>
+    let my_yt_rec_s_ajax = {
+      url: "http://localhost:5500/sample/videos.json",
+    };
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    MyYoutubeRecommendationStudy.listCallbacks.push({
+      container: "videos",
+      layout: "grid",
+      limit: 15,
+      lang: "pt_BR",
+      callback: MyYoutubeRecommendationStudy.buildList,
+    });
+
+    MyYoutubeRecommendationStudy.listCallbacks.push({
+      container: "widget",
+      layout: "list",
+      limit: 3,
+      callback: MyYoutubeRecommendationStudy.buildList,
+    });
+
+    MyYoutubeRecommendationStudy.listCallbacks.push({
+      container: "shortcode",
+      layout: "list",
+      limit: 6,
+      callback: MyYoutubeRecommendationStudy.buildList,
+    });
+
+    $(function () {
+      MyYoutubeRecommendationStudy.loadVideos(my_yt_rec_s_ajax.url).then((value) => {
+        MyYoutubeRecommendationStudy.listCallbacks.forEach((item) => {
+          item.callback(value, item.container, item.layout, item.limit, item.lang);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
