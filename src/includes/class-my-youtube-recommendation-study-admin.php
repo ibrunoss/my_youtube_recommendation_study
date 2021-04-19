@@ -1,7 +1,7 @@
 <?php
 
-if (! class_exists('My_Youtube_Recommendation_Study')) {
-  class My_Youtube_Recommendation_Study
+if (! class_exists('My_Youtube_Recommendation_Study_Admin')) {
+  class My_Youtube_Recommendation_Study_Admin
   {
 
     /**
