@@ -52,6 +52,12 @@ if (! defined('MY_YOUTUBE_RECOMMENDATION_STUDY_JSON_FILENAME')) {
 	define('MY_YOUTUBE_RECOMMENDATION_STUDY_JSON_FILENAME', 'my-yt-rec-s.json');
 }
 
+load_plugin_textdomain(
+	MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_SLUG,
+	false, 
+	MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_SLUG . '/languages/'
+);
+
 // Dependencies
 require_once MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_DIR . 'includes/class-my-youtube-recommendation-study.php';
 require_once MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_DIR . 'includes/class-my-youtube-recommendation-study-json.php';

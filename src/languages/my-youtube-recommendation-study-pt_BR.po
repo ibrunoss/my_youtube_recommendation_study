@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: My Youtube Recommendation Study v1.0\n"
+"POT-Creation-Date: 2021-04-21 00:00-0300\n"
+"PO-Revision-Date: 2021-04-21 00:06-0300\n"
+"Last-Translator: Bruno Silva Santana <ibrunoss@outlook.com>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:46
+#: includes/class-my-youtube-recommendation-study-admin.php:59
+msgid "Settings"
+msgstr "Configurações"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:74
+#: includes/class-my-youtube-recommendation-study-widget.php:11
+msgid "My Youtube Recommendation Study"
+msgstr "Minha recomendação do Youtube Estudo"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:75
+msgid "Fill with your Youtube channel ID"
+msgstr "Preencha com o ID do seu canal no Youtube"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:121
+msgid "General Settings"
+msgstr "Configurações gerais"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:128
+msgid "Channel Id"
+msgstr "ID do canal"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:136
+msgid "Cache Expiration"
+msgstr "Expiração do cache"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:144
+msgid "Post Settings"
+msgstr "Configurações nas publicações"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:151
+msgid "Show in Posts"
+msgstr "Mostrar nas publicações"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:159
+#: includes/class-my-youtube-recommendation-study-widget.php:50
+msgid "Layout"
+msgstr "Leiaute"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:167
+msgid "Videos in List"
+msgstr "Vídeos na lista"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:175
+msgid "Customize Style"
+msgstr "Personalize o Stylesheet"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:182
+msgid "Your CSS"
+msgstr "Seu CSS"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:235
+msgid "sample"
+msgstr "exemplo"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:236
+msgid "Find here your channel Id"
+msgstr "Encontre aqui o ID do seu canal"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:248
+msgid "hours is the expiration time for cached data"
+msgstr "hora será o tempo de expiração dos dados armazenados em cache"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:249
+msgid "Test here"
+msgstr "Teste aqui"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:259
+msgid "On posts show videos in position:"
+msgstr "Posição para mostrar os vídeos nas publicações:"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:260
+msgid "Disable"
+msgstr "Desativado"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:261
+msgid "After"
+msgstr "Depois"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:262
+msgid "Before"
+msgstr "Antes"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:272
+#: includes/class-my-youtube-recommendation-study-widget.php:52
+msgid "Grid"
+msgstr "Bloco"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:273
+#: includes/class-my-youtube-recommendation-study-widget.php:53
+msgid "List"
+msgstr "Lista"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:283
+msgid "Max"
+msgstr "Máximo"
+
+#: includes/class-my-youtube-recommendation-study-admin.php:297
+msgid "Plugin Version"
+msgstr "Versão do plugin"
+
+#: includes/class-my-youtube-recommendation-study-shortcode.php:24
+#: includes/class-my-youtube-recommendation-study-widget.php:95
+#: includes/class-my-youtube-recommendation-study.php:50
+msgid "Loading..."
+msgstr "Carregando..."
+
+#: includes/class-my-youtube-recommendation-study-widget.php:34
+msgid "Last Videos"
+msgstr "Últimos vídeos"
+
+#: includes/class-my-youtube-recommendation-study-widget.php:44
+msgid "Title"
+msgstr "Título"
+
+#: includes/class-my-youtube-recommendation-study-widget.php:59
+msgid "Videos to show"
+msgstr "Vídeos a mostrar"
+
+#: includes/class-my-youtube-recommendation-study-widget.php:60
+msgid "max"
+msgstr "máximo"
+
+#~ msgid "My Youtube Recommendation"
+#~ msgstr "Minha recomendação do Youtube Estudo"
