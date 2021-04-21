@@ -69,6 +69,8 @@ if ($my_youtube_recommendation_study->options['channel_id'] != '') {
 	);
 }
 
+$my_youtube_recommendation_study_shortcode = new My_Youtube_Recommendation_Study_Shortcode(MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_SLUG);
+
 if (is_admin()) {
 	require_once MY_YOUTUBE_RECOMMENDATION_STUDY_PLUGIN_DIR . 'includes/class-my-youtube-recommendation-study-admin.php';
 	$my_youtube_recommendation_study_admin = new My_Youtube_Recommendation_Study_Admin(
