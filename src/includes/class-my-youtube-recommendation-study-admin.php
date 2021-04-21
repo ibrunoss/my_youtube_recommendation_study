@@ -44,7 +44,7 @@ if (! class_exists('My_Youtube_Recommendation_Study_Admin')) {
       // This page will be under "Settings"
       add_options_page(
         __('Settings', $this->plugin_slug), 
-        $this->plugin_name, 
+        __($this->plugin_name, $this->plugin_slug),
         'manage_options', 
         $this->plugin_slug, 
         array($this, 'create_admin_page')
@@ -71,7 +71,7 @@ if (! class_exists('My_Youtube_Recommendation_Study_Admin')) {
           ?>
           <div class="error notice">
           <?php echo $channel_id ?>
-              <p><strong><?php echo __('My Youtube Recommendation', $this->plugin_slug); ?></strong></p>
+              <p><strong><?php echo __('My Youtube Recommendation Study', $this->plugin_slug); ?></strong></p>
               <p><?php echo __('Fill with your Youtube channel ID', $this->plugin_slug); ?></p>
           </div>
           <?php
@@ -85,7 +85,7 @@ if (! class_exists('My_Youtube_Recommendation_Study_Admin')) {
     {
       ?>
       <div class="wrap">
-          <h1><?php echo $this->plugin_name; ?></h1>
+          <h1><?php echo __($this->plugin_name, $this->plugin_slug); ?></h1>
           <form method="post" action="options.php">
           <?php
               // This prints out all hidden setting fields
